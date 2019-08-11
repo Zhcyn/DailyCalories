@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Futura.ttc">
+            <string>Futura-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CalendarCellView" customModule="MyCalories" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZF-5q-jge">
+                    <rect key="frame" x="75" y="75" width="50" height="50"/>
+                    <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="EeJ-kx-gTs"/>
+                        <constraint firstAttribute="width" constant="50" id="wQe-xN-Uml"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DateTextGoesHere" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFQ-Ah-S7z">
+                    <rect key="frame" x="27" y="89" width="146" height="22.5"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="XFQ-Ah-S7z" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="6I0-EL-5Wl"/>
+                <constraint firstItem="dZF-5q-jge" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="8gn-nv-uNu"/>
+                <constraint firstItem="dZF-5q-jge" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="J7f-Ee-1ea"/>
+                <constraint firstItem="XFQ-Ah-S7z" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="VSn-6B-NxA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dayLabel" destination="XFQ-Ah-S7z" id="tbR-ZI-3Id"/>
+                <outlet property="selectedView" destination="dZF-5q-jge" id="Yyu-go-dXf"/>
+            </connections>
+        </view>
+    </objects>
+</document>
